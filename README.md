@@ -39,7 +39,7 @@ Insert the switch in your html template.
 
 ```html
 <form>
-  <switch id="enabled" name="enabled" ng-model="enabled" class="green"></switch>
+  <switch id="enabled" name="enabled" ng-model="enabled"></switch>
   <br>{{ enabled }}
 </form>
 ```
@@ -47,7 +47,7 @@ Insert the switch in your html template.
 Add optional on/off text
 ```html
 <form>
-  <switch id="enabled" name="enabled" ng-model="enabled" on="On" off="Off" class="green"></switch>
+  <switch id="enabled" name="enabled" ng-model="enabled" on="On" off="Off"></switch>
   <br>{{ enabled }}
 </form>
 ```
@@ -55,7 +55,84 @@ Add optional on/off text
 Disabled state
 ```html
 <form>
-  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="green"></switch>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+##Bootstrap Color Schemes
+
+1. Default Color
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+2. Success Color
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="success"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+3. Info Color
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="info"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+4. Warning Color
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="warning"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+5. Danger Color
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="danger"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+## Switch Sizing
+
+1. Small
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" size="sm" class="success"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+2. Medium (default)
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="success"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+or
+
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" size="md" class="success"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+3. Large
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" size="lg" class="success"></switch>
   <br>{{ enabled }}
 </form>
 ```
