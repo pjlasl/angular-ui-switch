@@ -6,7 +6,7 @@
   box-sizing: content-box;
   overflow: visible;
   width: 52px;
-  height: 30px;
+  height: 30px;  
   padding: 0px;
   margin: 0px;
   border-radius: 20px;
@@ -16,32 +16,61 @@
   -webkit-transition: 0.3s ease-out all;
   top: -1px;
 }
+
 /*adding a wide width for larger switch text*/
 .switch.wide {
-  width:80px;
+  width:100px;
 }
 .switch small {
   background: #fff;
   border-radius: 100%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.4);
   width: 30px;
-  height: 30px;
+  height: 30px;  
   position: absolute;
   top: 0px;
   left: 0px;
   transition: 0.3s ease-out all;
   -webkit-transition: 0.3s ease-out all;
 }
+
 .switch.checked {
-  background: rgb(100, 189, 99);
-  border-color: rgb(100, 189, 99);
+  background: #777777;
+  border-color: #777777;  
 }
+
+.switch.checked.success {  
+  background: #DFF0D8;
+  border-color: #DFF0D8;
+}
+
+.switch.checked.primary {
+  background: #337AB7;
+  border-color: #337AB7;
+}
+
+.switch.checked.info {
+  background: #D9EDF7;
+  border-color: #D9EDF7;
+}
+
+.switch.checked.warning {
+  background: #FCF8E3;
+  border-color: #FCF8E3;
+}
+
+.switch.checked.danger {
+  background: #F2DEDE;
+  border-color: #F2DEDE;
+}
+
 .switch.checked small {
   left: 22px;
 }
 /*wider switch text moves small further to the right*/
 .switch.wide.checked small {
-  left:52px;
+  left:70px;
+/*     left:65px; */
 }
 /*styles for switch-text*/
 .switch .switch-text {
@@ -53,14 +82,14 @@
   display:block;
   position: absolute;
   right: 10%;
-  top: 25%;
+  top: 25%;  
   z-index: 0;
   color:#A9A9A9;
 }
 
 .switch .on {
   display:none;
-   z-index: 0;
+  z-index: 0;
   color:#fff;
   position: absolute;
   top: 25%;
@@ -73,10 +102,93 @@
 
 .switch.checked .on {
   display:block;
+  color: #fff;
+
+}
+
+.switch.checked.success .on {
+  display:block;
+  color: #3C763D;
+
+}
+
+.switch.checked.info .on {
+  display:block;
+  color: #317FB6;
+
+}
+
+.switch.checked.warning .on {
+  display:block;
+  color: #8A6D3B;
+
+}
+
+.switch.checked.danger .on {
+  display:block;
+  color: #AB4442;
 
 }
 
 .switch.disabled {
   opacity: .50;
   cursor: not-allowed;
+}
+
+.size-sm {
+    border-radius: 20px;
+    height: 20px;
+    width: 33px;	
+}
+
+.size-sm.wide {
+  width:85px;
+}
+
+.size-sm.wide.checked small {  
+    left:65px;
+}
+
+.size-sm > small {
+	height: 20px;
+	width: 20px;
+}
+
+.size-sm .off {    
+  right: 10%;
+  top: 10%;  
+}
+
+.size-sm .on {  
+  top: 10%;
+  left: 15%;
+}
+
+.size-sm.checked small {
+	left: 13px;
+}
+
+.size-md {	
+	border-radius: 20px;
+    height: 30px;
+    width: 52px;
+}
+
+.size-lg {
+	border-radius: 40px;
+	height: 40px;
+	width: 66px;
+}
+
+.size-lg.wide {
+	width: 110px;
+}
+
+.size-lg > small {
+	height: 40px;
+	width:40px;
+}
+
+.size-lg.checked small {
+	left: 26px;
 }
