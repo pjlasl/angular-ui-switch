@@ -26,9 +26,9 @@
              html += '<span';
              html +=   ' class="switch' + (attrs.class ? ' ' + attrs.class : '');
              html +=   attrs.size ? ' size-' + attrs.size : '';  /*switch size from small to large*/
-             html +=   '"';
+             html +=   '"';             
              html += '>';
-             html += '<small></small>';
+             html += '<small></small>';             
              html += '<input type="checkbox"';
              html += attrs.id ? ' id="' + attrs.id + '"' : '';
              html += attrs.name ? ' name="' + attrs.name + '"' : '';

@@ -60,9 +60,9 @@ Disabled state
 </form>
 ```
 
-##Bootstrap Color Schemes
+## Bootstrap Color Schemes
 
-1. Default Color
+Default Color
 ```html
 <form>
   <switch id="enabled" name="enabled" ng-model="enabled" disabled="true"></switch>
@@ -70,7 +70,7 @@ Disabled state
 </form>
 ```
 
-2. Success Color
+Success Color
 ```html
 <form>
   <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="success"></switch>
@@ -78,7 +78,7 @@ Disabled state
 </form>
 ```
 
-3. Info Color
+Info Color
 ```html
 <form>
   <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="info"></switch>
@@ -86,7 +86,7 @@ Disabled state
 </form>
 ```
 
-4. Warning Color
+Warning Color
 ```html
 <form>
   <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="warning"></switch>
@@ -98,6 +98,24 @@ Disabled state
 ```html
 <form>
   <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="danger"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+### Color Alternatives
+
+1. You can use the DARK version of the colors above by appending -dark *(i.e. success-dark)*
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" size="lg" class="success-dark"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+2. You can also INVERT the control colors.
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" size="lg" class="invert success"></switch>
   <br>{{ enabled }}
 </form>
 ```
@@ -133,6 +151,16 @@ or
 ```html
 <form>
   <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" size="lg" class="success"></switch>
+  <br>{{ enabled }}
+</form>
+```
+
+## Borders
+
+You can add borders around your control. The border will match the color scheme you are using.
+```html
+<form>
+  <switch id="enabled" name="enabled" ng-model="enabled" disabled="true" class="success border"></switch>
   <br>{{ enabled }}
 </form>
 ```
